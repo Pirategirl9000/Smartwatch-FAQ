@@ -32,7 +32,7 @@ const toggleVisibility = evt => {
 
             faqImage.src = heading.getAttribute("data-img");
 
-
+            faqImage.alt = heading.getAttribute("data-alt");
 
         }
     }
