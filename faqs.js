@@ -26,7 +26,9 @@ const toggleVisibility = evt => {
             // Displays the answer to the question clicked
             heading.nextElementSibling.classList.toggle("open");
 
-            if (!heading.contains("data-img") || !heading.contains("data-alt")) return;
+
+
+            if (!heading.hasAttribute("data-img") || !heading.hasAttribute("data-alt")) return;
 
             faqImage.src = heading.getAttribute("data-img");
 
