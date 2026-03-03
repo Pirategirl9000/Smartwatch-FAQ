@@ -28,6 +28,10 @@ const faqImageOrigAlt = faqImage.alt;
  */
 const h2s = document.querySelectorAll("#faqs h2");
 
+/**
+ * Replaces the image and displays the answer to the question clicked
+ * @param evt the question that was clicked
+ */
 const toggleVisibility = evt => {
     const ct = evt.currentTarget;
 
@@ -56,7 +60,9 @@ const toggleVisibility = evt => {
 }
 
 
-
+/**
+ * Add click listeners to the headers
+ */
 document.addEventListener("DOMContentLoaded", () => {
     for (let heading of h2s) {
         heading.addEventListener("click", toggleVisibility);
