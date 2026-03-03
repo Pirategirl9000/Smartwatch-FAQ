@@ -15,6 +15,13 @@ const toggleVisibility = evt => {
     const ct = evt.currentTarget;
 
     let allClosed = false;
+
+    for (let heading of h2s) {
+        if (heading == ct) {
+            allClosed = true;
+            heading.classList.toggle("minus");
+        }
+    }
 }
 
 
