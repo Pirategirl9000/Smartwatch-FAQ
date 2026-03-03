@@ -57,7 +57,7 @@ const toggleVisibility = evt => {
         } else {
             heading.classList.remove("minus");
 
-
+            heading.nextElementSibling.classList.remove("open");
 
 
         }
