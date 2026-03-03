@@ -19,8 +19,19 @@ const toggleVisibility = evt => {
     for (let heading of h2s) {
         if (heading === ct) {
             allClosed = true;
+
+            // Toggles the minus background image for the side of this question
             heading.classList.toggle("minus");
+
+            // Displays the answer to the question clicked
             heading.nextElementSibling.classList.toggle("open");
+
+            if (!heading.contains("data-img") || !heading.contains("data-alt")) return;
+
+            faqImage.src = heading.getAttribute("data-img");
+
+
+
         }
     }
 }
