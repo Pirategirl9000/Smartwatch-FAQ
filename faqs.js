@@ -54,6 +54,11 @@ const toggleVisibility = evt => {
             // Update the image
             faqImage.src = heading.getAttribute("data-img");
             faqImage.alt = heading.getAttribute("data-alt");
+        } else {
+            heading.classList.remove("minus");
+
+
+
 
         }
     }
