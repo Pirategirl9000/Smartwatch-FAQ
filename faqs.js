@@ -5,3 +5,8 @@
  * @author Sarah Fenton - https://github.com/sarahfenton204
  * @link https://github.com/Pirategirl9000/Smartwatch-FAQ
  */
+
+const faqImage = document.querySelector("#faq_image");
+const faqImageOrigSrc = faqImage.src;
+const faqImageOrigAlt = faqImage.alt;
+const h2s = document.querySelectorAll("#faqs h2");
