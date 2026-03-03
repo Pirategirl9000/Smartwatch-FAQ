@@ -10,3 +10,11 @@ const faqImage = document.querySelector("#faq_image");
 const faqImageOrigSrc = faqImage.src;
 const faqImageOrigAlt = faqImage.alt;
 const h2s = document.querySelectorAll("#faqs h2");
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    for (let heading of h2s) {
+        heading.addEventListener("click", toggleVisibility);
+    }
+})
