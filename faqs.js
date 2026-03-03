@@ -11,6 +11,12 @@ const faqImageOrigSrc = faqImage.src;
 const faqImageOrigAlt = faqImage.alt;
 const h2s = document.querySelectorAll("#faqs h2");
 
+const toggleVisibility = evt => {
+    const ct = evt.currentTarget;
+
+    let allClosed = false;
+}
+
 
 
 document.addEventListener("DOMContentLoaded", () => {
