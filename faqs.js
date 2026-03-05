@@ -83,9 +83,7 @@ const toggleVisibility = evt => {
  * Add click listeners to the headers
  */
 document.addEventListener("DOMContentLoaded", () => {
-    //TODO: Replace with a forEach()
-
-    for (let heading of h2s) {
-        heading.addEventListener("click", toggleVisibility);
-    }
+    h2s.forEach(header => {
+        header.addEventListener("click", toggleVisibility);
+    })
 })
