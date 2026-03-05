@@ -11,6 +11,7 @@
 * [Authors](#authors)
 * [Output](#output)
 * [Purpose](#purpose)
+* [Script Breakdown](#script-breakdown)
 * [Credits](#credits)
 
 
