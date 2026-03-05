@@ -35,7 +35,7 @@
   * The original image upon program startup
   * Used when both questions are closed to reset the `faqImage` src
 * `faqImageOrigAlt`
-  * The alt text of the orignal image on program startup
+  * The alt text of the original image on program startup
   * Used when both questions are closed to reset the `faqImage` alt text
 * `h2s`
   * All the h2 elements in the HTML which store the questions
