@@ -28,6 +28,25 @@ This program displays an FAQ page for a smartwatch that uses collapsible panels 
 * Toggling a class
 
 ## Script Breakdown
+#### Globals
+* `faqImage`
+  * The image element we will replace on question clicks
+* `faqImageOrigSrc`
+  * The original image upon program startup
+  * Used when both questions are closed to reset the `faqImage` src
+* `faqImageOrigAlt`
+  * The alt text of the orignal image on program startup
+  * Used when both questions are closed to reset the `faqImage` alt text
+* `h2s`
+  * All the h2 elements in the HTML which store the questions
+  * Used to determine what header element was clicked so we can update the image and div element associated with the answer
+
+#### Functions and Listeners
+* `toggleVisibility`
+  * Called by all header elements on click
+  * Updates the header element by: toggling the visibilty of the answer, closing all other answer divs, and updating the `faqImage`
+* `document.onDOMContentLoaded`
+  * Adds an onClick listener to all `h2s` elements that calls `toggleVisibility`
 
 ## Credits
 ###### This script is an adaptation of a script provided by [Debbie Johnson](https://github.com/dejohns2)
