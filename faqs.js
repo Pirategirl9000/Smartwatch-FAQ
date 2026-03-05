@@ -39,6 +39,8 @@ const toggleVisibility = evt => {
     let allClosed = false;
 
     for (let heading of h2s) {
+
+        // If this is the heading that was clicked
         if (heading === ct) {
             allClosed = true;
 
@@ -55,12 +57,18 @@ const toggleVisibility = evt => {
             faqImage.src = heading.getAttribute("data-img");
             faqImage.alt = heading.getAttribute("data-alt");
         } else {
+            // Revert back to the plus symbol
             heading.classList.remove("minus");
 
+            // Close the answer div element
             heading.nextElementSibling.classList.remove("open");
 
 
         }
+
+        //TODO: If everything is closed revert back to original image src and alt
+
+        //TODO: Prevent default event behavior
     }
 }
 
@@ -69,6 +77,8 @@ const toggleVisibility = evt => {
  * Add click listeners to the headers
  */
 document.addEventListener("DOMContentLoaded", () => {
+    //TODO: Replace with a forEach()
+
     for (let heading of h2s) {
         heading.addEventListener("click", toggleVisibility);
     }
