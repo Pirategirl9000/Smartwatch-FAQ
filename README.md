@@ -17,15 +17,16 @@
 
 
 ## Purpose
-This program displays an FAQ page for a smartwatch that uses collapsible panels for questions and different images for each question
+### This program displays an FAQ page for a smartwatch that uses collapsible panels for questions. When the question is clicked an answer appears and a corresponding image is displayed at the top
 
 ## New Concepts
 * Adding/Removing classes from DOM elements
 * Checking for and grabbing custom HTML attributes from DOM elements
 * Grabbing next elements based on sibling relationship of DOM elements
 * Checking equality of DOM elements
-* Finding the target of an Event object
-* Toggling a class
+* Finding the target of an `Event` object
+* Toggling the class of a DOM element
+* Mutation of an array using `Array.forEach()`
 
 ## Script Breakdown
 #### Globals
