@@ -68,14 +68,14 @@ const toggleVisibility = evt => {
 
 
         }
-
-        //TODO: Prevent default event behavior
     }
 
     if (allClosed) {
         faqImage.src = faqImageOrigSrc;
         faqImage.alt = faqImageOrigAlt;
     }
+
+    evt.preventDefault();
 }
 
 
