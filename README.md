@@ -49,9 +49,9 @@
   * Adds an onClick listener to all `h2s` elements that calls `toggleVisibility`
 
 ### :camera: Output
-![Output of program](assets/output1.)
-![Output of program](assets/output2.)
-![Output of program](assets/output3.)
+![Output of program](assets/output1.png)
+![Output of program](assets/output2.png)
+![Output of program](assets/output3.png)
 
 ### :thumbsup: Credits
 ###### This script is an adaptation of a script provided by [Debbie Johnson](https://github.com/dejohns2)
