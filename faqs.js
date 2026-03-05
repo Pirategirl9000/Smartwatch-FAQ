@@ -66,7 +66,10 @@ const toggleVisibility = evt => {
 
         }
 
-        //TODO: If everything is closed revert back to original image src and alt
+        if (allClosed) {
+            faqImage.src = faqImageOrigSrc;
+            faqImage.alt = faqImageOrigAlt;
+        }
 
         //TODO: Prevent default event behavior
     }
