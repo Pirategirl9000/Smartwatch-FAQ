@@ -42,7 +42,10 @@ const toggleVisibility = evt => {
 
         // If this is the heading that was clicked
         if (heading === ct) {
-            allClosed = true;
+
+            if (heading.classList.contains("minus")) {
+                allClosed = true;
+            }
 
             // Toggles the minus background image for the side of this question
             heading.classList.toggle("minus");
@@ -66,12 +69,12 @@ const toggleVisibility = evt => {
 
         }
 
-        if (allClosed) {
-            faqImage.src = faqImageOrigSrc;
-            faqImage.alt = faqImageOrigAlt;
-        }
-
         //TODO: Prevent default event behavior
+    }
+
+    if (allClosed) {
+        faqImage.src = faqImageOrigSrc;
+        faqImage.alt = faqImageOrigAlt;
     }
 }
 
