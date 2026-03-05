@@ -1,7 +1,7 @@
 # Smartwatch-FAQ
 
-## Output
-![Output of program]()
+![Video of output](assets/outputVideo.gif)
+
 
 ## Authors
 * [Violet French](https://github.com/Pirategirl9000)
@@ -48,6 +48,11 @@
   * Updates the header element by: toggling the visibilty of the answer, closing all other answer divs, and updating the `faqImage`
 * `document.onDOMContentLoaded`
   * Adds an onClick listener to all `h2s` elements that calls `toggleVisibility`
+
+### Output
+![Output of program](assets/output1.)
+![Output of program](assets/output2.)
+![Output of program](assets/output3.)
 
 ## Credits
 ###### This script is an adaptation of a script provided by [Debbie Johnson](https://github.com/dejohns2)
